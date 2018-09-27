@@ -1,0 +1,24 @@
+{
+  "name": "io",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "./node_modules/.bin/wdio wdio.conf.js",
+    "setup-test_selenium_install": "./node_modules/.bin/selenium-standalone install --drivers.chrome.version=2.32 --drivers.chrome.baseURL=https://chromedriver.storage.googleapis.com",
+    "setup-test_selenium_install1": "./node_modules/.bin/selenium-standalone install",
+    "setup-test_selenium_start": "./node_modules/.bin/selenium-standalone start --drivers.chrome.version=2.32",
+    "setup-test_selenium_start1": "./node_modules/.bin/selenium-standalone start",
+    "setup-test_selenium_start_xvfb-run": "xvfb-run --server-args=\"-screen 0, 1024x740x24\" ./node_modules/.bin/selenium-standalone start --drivers.chrome.version=2.32",
+    "setup-test_selenium_start_xvfb-run1": "xvfb-run --server-args=\"-screen 0, 1024x740x24\" ./node_modules/.bin/selenium-standalone start"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "^3.2.0",
+    "wdio-allure-reporter": "^0.1.2",
+    "wdio-mocha-framework": "^0.5.8",
+    "wdio-selenium-standalone-service": "^0.0.10",
+    "wdio-teamcity-reporter": "^1.1.1",
+    "webdriverio": "^4.12.0",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
