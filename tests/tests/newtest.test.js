@@ -109,31 +109,7 @@ describe('server ', function () {
 		var url = fs.readFileSync("txt.txt", "ascii");
 		browser.url(url);
 		browser.pause(5000);
-/*
 
-
-		ScaletsPage.waitVisible();
-		ScaletsPage.serverBlock.click();
-*/
-
-/*		ServerPage.waitVisible();
-		ServerPage.removeButton.click();
-
-		RemovePage.waitVisible();
-		var serverName = RemovePage.serverName.getText();
-		RemovePage.agreeCheck.click();
-		RemovePage.waitInput();
-		RemovePage.nameInput.setValue(serverName);
-		RemovePage.waitButton();
-		RemovePage.removeButton.click();
-
-		ScaletsPage.waitVisible();
-		ScaletsPage.waitStatus();
-
-	//	expect(ScaletsPage.statusBlock.getText()).to.be.equal('Удаление сервера');
-
-		ScaletsPage.serverBlock.click();
-		browser.pause(2000);*/
 		RemovedServerPage.waitVisible();
 
 		browser.screenshot();

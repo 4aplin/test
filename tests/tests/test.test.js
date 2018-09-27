@@ -9,6 +9,7 @@ describe('click checking', function () {
 // browser.click('//input[@name=".email_or_login"]');
 		browser.setValue('#login-user > div > form > div:nth-child(4) > div:nth-child(1) > input ', 'test123');
 // browser.debug();
+		var url = browser.getUrl();
 		fs.writeFileSync("txt.txt", url,  "ascii");
 	});
 });

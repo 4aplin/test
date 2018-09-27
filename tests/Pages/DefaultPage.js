@@ -15,25 +15,6 @@ var DefaultPage = Object.create(Page, {
 
 		} },
 
-
-	/*	menuDiscoverClick: {value: function () {
-				this.waitVisible();
-				var i = 0;
-				while (true)
-				{
-					try {
-						this.menuButton.click();
-						break;
-					}
-					catch (error){i = i +1;  }
-					this.open();
-					browser.pause(1000);
-					console.log(i);
-					if (i === 30)
-						break;
-				}
-			}}*/
 });
 
-// module.exports = DiscoverPage;
 module.exports = DefaultPage;

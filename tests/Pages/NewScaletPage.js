@@ -9,7 +9,6 @@ var NewScaletPage = Object.create(Page, {
 	form4 : { get: function () { return browser.element('#new-scalet-form > div:nth-child(4) > div.new-scalet-form-name.new-scalet-form-section'); } },
 	form5 : { get: function () { return browser.element('#new-scalet-form > div:nth-child(4) > div.new-scalet-form-ssh.new-scalet-form-section'); } },
 	createButton : { get: function () { return browser.element('#new-scalet-form > div:nth-child(4) > div.mt20.ml20.submit-buttons > button.btn.btn-lblue.btn--m.btn--raised.ng-binding'); } },
-	// errorMassagePanel: { get: function () { return browser.element('div.server-response:nth-child(3) > span'); } },
 
 	waitVisible: { value: function() {
 			browser.pause(1000);
