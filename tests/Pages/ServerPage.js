@@ -15,19 +15,16 @@ var ServerPage = Object.create(Page, {
 			expect(this.status.waitForVisible()).to.be.equal(true);
 			expect(this.actions.waitForVisible()).to.be.equal(true);
 			expect(this.removeButton.waitForVisible()).to.be.equal(true);
-			// expect(this.closeBtn.waitForVisible()).to.be.equal(true);
 
 			expect(this.body.waitForExist()).to.be.equal(true);
 			expect(this.status.waitForExist()).to.be.equal(true);
 			expect(this.actions.waitForExist()).to.be.equal(true);
 			expect(this.removeButton.waitForExist()).to.be.equal(true);
-			// expect(this.closeBtn.waitForExist()).to.be.equal(true);
 
 			expect(this.body.waitForEnabled()).to.be.equal(true);
 			expect(this.status.waitForEnabled()).to.be.equal(true);
 			expect(this.actions.waitForEnabled()).to.be.equal(true);
 			expect(this.removeButton.waitForEnabled()).to.be.equal(true);
-			// expect(this.closeBtn.waitForEnabled()).to.be.equal(true);
 
 		} },
 });

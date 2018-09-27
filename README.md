@@ -7,14 +7,9 @@ npm run setup-test_selenium_install
 3. Start test
 npm test
 
-if you used headless start
-npm run setup-test_selenium_start_xvfb-run
 
 ___________________________________________________________________
 
-run one test setting on wdio.conf:
-specs: [        
-        'tests/tests/song.add.test.js'
 ____________________________________________________________________
 for debug used 
         browser.debug(); 

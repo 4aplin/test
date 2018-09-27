@@ -13,9 +13,7 @@ var fs=require("fs");
 
 
 describe('server ', function () {
-	fs.writeFileSync = function (s, url, s2) {
 
-	}
 	it('create', function () {
 
 		DefaultPage.open();
@@ -34,7 +32,6 @@ describe('server ', function () {
 
 		browser.pause(10000);
 
-
 		ScaletsPage.waitVisible();
 		ScaletsPage.createServerButton.click();
 
@@ -48,14 +45,13 @@ describe('server ', function () {
 
 		browser.pause(24000);
 
-
 		ScaletsPage.waitVisible();
 		ScaletsPage.serverBlock.click();
 
 		ServerPage.waitVisible();
-		ServerPage.removeButton.click();
-
 		expect(ServerPage.status.getText()).to.be.equal('Запущен');
+
+		ServerPage.removeButton.click();
 
 		RemovePage.waitVisible();
 		var serverName = RemovePage.serverName.getText();
@@ -66,24 +62,12 @@ describe('server ', function () {
 		RemovePage.removeButton.click();
 
 		ScaletsPage.waitVisible();
-		// ScaletsPage.waitStatus();
-
-		// expect(ScaletsPage.statusBlock.getText()).to.be.equal('Удаление сервера');
 
 		ScaletsPage.serverBlock.click();
 		browser.pause(2000);
-		RemovedServerPage.waitVisible();
 
-		browser.pause(8000);
-
-		// expect(RemovedServerPage.status.getText()).to.be.equal('Остановлен');
 		var url = browser.getUrl();
 		fs.writeFileSync("txt.txt", url,  "ascii");
-
-
-		// expect(RemovedServerPage.status.getText()).to.be.equal('Удалён');
-
-
 
 	});
 

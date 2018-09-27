@@ -28,11 +28,7 @@ exports.config = {
  bail: 0,
     screenshotOnReject: false,
  screenshotPath: false,
- // screenshotPath: 'screenshots',
- //    screenshotOnReject: {
- //        connectionRetryTimeout: 30000,
- //        connectionRetryCount: 0
- //    },
+
  baseUrl: 'https://vscale.io/',
  waitforTimeout: debug ? 99999999 : 100000,
  connectionRetryTimeout: debug ? 99999999 : 100000,
@@ -43,12 +39,6 @@ exports.config = {
   timeout: debug ? 99999999 : 900000
  },
  services: ['selenium-standalone'],
- // reporters: [ 'teamcity'],
- // reporters: ['dot', 'allure', 'teamcity'],
  reporters: ['dot', 'teamcity'],
- // reporterOptions: {
- //  allure: {
- //   outputDir: 'allure-results'
- //  }
- // }
+
 };
